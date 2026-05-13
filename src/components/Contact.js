@@ -3,9 +3,9 @@ import './Contact.css';
 
 const contactLinks = [
   { icon: '✉', label: 'saksham.panghaal@gmail.com',       href: 'mailto:saksham.panghaal@gmail.com' },
-  { icon: '⌁', label: 'github.com/saksham',       href: '#' },
-  { icon: '◈', label: 'linkedin.com/in/saksham',  href: '#' },
-  { icon: '↓', label: 'Download Resume',           href: '#' },
+  { icon: '⌁', label: 'techisat415',       href: 'https://github.com/techisat415' },
+  { icon: '◈', label: 'linkedin',  href: 'https://www.linkedin.com/in/sakshampanghal/' },
+  { icon: '↓', label: 'Download Resume',           href: 'public/saksham_panghal_resume.pdf' },
 ];
 
 function Contact() {
@@ -39,7 +39,22 @@ function Contact() {
           </p>
           <div className="contact__links">
             {contactLinks.map(({ icon, label, href }) => (
-              <a key={label} href={href} className="contact__link">
+              <a 
+              key={label} 
+              href={href} 
+              className="contact__link"
+              download={
+                label === 'Download Resume'
+              }
+              target={
+                href.startsWith('http') 
+                ? '_blank' : undefined
+              }
+              rel={
+                href.startsWith('http') 
+                ? 'noopener noreferrer' : undefined
+              }
+              >
                 <span className="contact__link-icon">{icon}</span>
                 <span>{label}</span>
               </a>
