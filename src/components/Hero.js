@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Hero.css';
 
-const ROLES = ['ML Researcher', 'Software Engineer', 'GNN Enthusiast', 'UX Thinker'];
+const ROLES = ['Software Engineer', 'Avid Learner', 'Full Stack Developer'];
 
 function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -33,7 +33,7 @@ function Hero() {
         <p className="hero__tag">Available for opportunities</p>
 
         <h1 className="hero__name">
-          Saksham<br />Panghal
+          Saksham Panghal
         </h1>
 
         <p className="hero__role">

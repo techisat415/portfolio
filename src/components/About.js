@@ -4,8 +4,9 @@ import './About.css';
 const info = [
   { label: 'Study',    value: 'Computer Science & Engineering' },
   { label: 'Focus',    value: 'Software Engineering' },
-  { label: 'Research', value: 'Graph Neural Networks, VQA' },
-  { label: 'Tools',    value: 'Python, PyTorch, React, Figma' },
+  { label: 'Research', value: 'Graph Neural Networks' },
+  { label: 'Languages', value: 'C/C++, Python, JavaScript, Dart' },
+  { label: 'Tools',    value: 'React, Node.js, MongoDB, PostgreSQL, Flutter' },
   { label: 'Location', value: 'India' },
 ];
 

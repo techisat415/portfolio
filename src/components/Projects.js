@@ -4,65 +4,63 @@ import './Projects.css';
 const projects = [
   {
     num: '01',
-    category: 'Research',
-    title: 'AdaCC-GNN',
-    desc: 'Adaptive Connected Component prediction using Graph Neural Networks. Integrates ChebNet & GraphSAGE with cumulative node coverage filtering for imbalanced graph regimes.',
+    category: 'App Development',
+    title: 'Campus Utility Platform',
+    desc: 'A cross-platform mobile application using Flutter for campus utility services including lost & found item search and ride sharing',
     tags: [
-      { label: 'PyTorch', type: '' },
-      { label: 'GNNs',    type: '' },
-      { label: 'Python',  type: 'blue' },
-      { label: 'Research',type: 'neutral' },
+      { label: 'Flutter', type: '' },
+      { label: 'Firebase',    type: 'neutral' },
+      { label: 'FastAPI',  type: 'blue' },
     ],
     links: [
-      { label: 'GitHub', href: '#' },
-      { label: 'Paper',  href: '#' },
+      { label: 'GitHub', href: 'https://github.com/Radiation444/CollegeUtility' },
     ],
   },
   {
     num: '02',
-    category: 'ML',
-    title: 'VQA on SHAPES',
-    desc: 'Visual Question Answering research on the SHAPES dataset. Focused on dataset loading, visualization pipelines, and model evaluation with presentation-ready outputs.',
+    category: 'Full Stack Development & Graph Algorithms',
+    title: 'Metro Route Planner',
+    desc: 'A web application that computes optimised routes in a metro system, utilizing graph algorithms for efficient pathfinding based on user preferences and real-time data.',
     tags: [
-      { label: 'PyTorch', type: '' },
-      { label: 'VQA',     type: '' },
-      { label: 'Python',  type: 'blue' },
-      { label: 'CV',      type: 'neutral' },
+      { label: 'Node.js', type: 'blue' },
+      { label: 'Express.js', type: 'green' },
+      { label: 'React',  type: 'red' },
+      { label: 'PostgreSQL', type: 'neutral' },
     ],
     links: [
-      { label: 'GitHub', href: '#' },
-      { label: 'Demo',   href: '#' },
+      { label: 'GitHub', href: 'https://github.com/techisat415/metro-routing' },
     ],
   },
   {
     num: '03',
-    category: 'Web',
-    title: 'MLP from Scratch',
-    desc: 'Multi-layer perceptron implemented from scratch for XOR classification. Features manual backpropagation and an interactive browser-based visualization widget.',
+    category: 'Research Project',
+    title: 'Adaptive GNN Pipeline for Component Classification in Graphs',
+    desc: 'Worked on the problem of component classification in complex graph datasets integrated multiple GNN architectures within a unified training framework',
     tags: [
-      { label: 'JavaScript', type: 'blue' },
-      { label: 'HTML/CSS',   type: 'blue' },
-      { label: 'Math',       type: 'neutral' },
-      { label: 'Neural Net', type: '' },
+      { label: 'Graph Neural Networks', type: 'blue' },
+      { label: 'Pytorch',   type: 'blue' },
+      { label: 'Deep Learning', type: 'neutral' },
+      { label: 'Math', type: 'neutral' },
     ],
     links: [
-      { label: 'GitHub', href: '#' },
-      { label: 'Live',   href: '#' },
+      // { label: 'GitHub', href: '#' },
+      // { label: 'Live',   href: '#' },
     ],
   },
   {
     num: '04',
-    category: 'UX',
-    title: 'Shopping App UX',
-    desc: 'End-to-end UX research deliverable for an e-commerce app. Includes persona-based user journey maps, swim lanes, emotion curves, and touchpoint analysis.',
+    category: 'Backend Development',
+    title: 'Tasks and Notes Manager',
+    desc: 'A simple yet effective task and note management application built with a modern backend stack.',
     tags: [
-      { label: 'Figma',      type: 'neutral' },
-      { label: 'UX Research',type: 'neutral' },
-      { label: 'Prototyping',type: 'neutral' },
+      { label: 'Node.js',      type: 'blue' },
+      { label: 'Express.js',   type: 'green' },
+      { label: 'MongoDB',      type: 'neutral' },
+      { label: 'REST API',     type: 'neutral' },
     ],
     links: [
-      { label: 'Figma',      href: '#' },
-      { label: 'Case Study', href: '#' },
+      { label: 'GitHub', href: 'https://github.com/techisat415/tasks-notes-backend' },
+      // { label: 'Case Study', href: '#' },
     ],
   },
 ];
@@ -86,7 +84,7 @@ function ProjectCard({ num, category, title, desc, tags, links }) {
       </div>
       <div className="project-card__links">
         {links.map(({ label, href }) => (
-          <a key={label} href={href} className="project-card__link">→ {label}</a>
+          <a key={label} href={href} target="_blank" rel="noopener noreferrer" className="project-card__link">→ {label}</a>
         ))}
       </div>
       <div className="project-card__underline" />
