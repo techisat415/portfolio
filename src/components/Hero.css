@@ -48,13 +48,15 @@
 }
 
 .hero__name {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: clamp(52px, 8vw, 96px);
+  /* font-family: 'JetBrains Mono', monospace; */
+  font-family: 'Press Start 2P', cursive;
+  font-size: clamp(40px, 6vw, 70px);
   font-weight: 800;
-  line-height: 0.95;
+  line-height: 1.1;
   letter-spacing: -0.03em;
   margin-bottom: 20px;
-  background: linear-gradient(135deg, #0852da 0%, rgba(0, 255, 170, 0.9) 60%, #00ff1e 100%);
+  /* background: linear-gradient(135deg, #0852da 0%, rgba(0, 255, 170, 0.9) 60%, #00ff1e 100%); */
+  background: linear-gradient(135deg, #da0808 0%, rgba(255, 149, 0, 0.9) 60%, #ffd900 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

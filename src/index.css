@@ -1,5 +1,6 @@
 /* ── Global Reset & Variables ── */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -13,7 +14,7 @@
   --bg2:     #0d1117;
   --bg3:     #111820;
   --border:  rgba(212, 0, 255, 0.12);
-  --accent:  #cc00ff;
+  --accent:  #ff6600;
   --accent2: #00aaff;
   --text:    #e8f0fe;
   --muted:   #6b7fa3;
