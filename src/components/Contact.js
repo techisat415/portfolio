@@ -5,7 +5,7 @@ const contactLinks = [
   { icon: '✉', label: 'saksham.panghaal@gmail.com',       href: 'mailto:saksham.panghaal@gmail.com' },
   { icon: '⌁', label: 'techisat415',       href: 'https://github.com/techisat415' },
   { icon: '◈', label: 'linkedin',  href: 'https://www.linkedin.com/in/sakshampanghal/' },
-  { icon: '↓', label: 'Download Resume',           href: 'public/saksham_panghal_resume.pdf' },
+  { icon: '↓', label: 'Download Resume',           href: 'public/Saksham Panghal Resume.pdf' },
 ];
 
 function Contact() {
