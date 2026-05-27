@@ -19,21 +19,27 @@ function About() {
           <h2 className="section-title">About Me</h2>
         </div>
         <p>
-          I'm a <strong>Computer Science &amp; Engineering student</strong> with a passion
-          for building intelligent systems and elegant software. My interests span machine
-          learning, software engineering, and digital design.
+          Hi! I am <strong>Saksham Panghal</strong>, a developer passionate about software engineering 
+          and building impactful products.
+          I am currently pursuing my B.Tech in <strong>Computer Science & Engineering</strong> at the 
+          Indian Institute of Technology Jodhpur, 
+          where I have honed my skills in <strong>full-stack development</strong> and research.
+          
         </p>
         <p>
-          When I'm not coding, I'm working on research problems involving{' '}
-          <strong>graph neural networks</strong> and visual question answering, or
-          contributing to hostel events and team competitions.
+          I enjoy learning new things as much as I can and working on projects that enhance 
+          user experiences and solve real problems.
+          Lately, I have been exploring <strong>DevOps and distributed systems</strong>, driven by curiosity 
+          about building scalable and reliable software.
+
         </p>
         <p>
-          I thrive at the intersection of rigorous engineering and creative problem-solving.
+          Apart from programming, some things that interest me are theoretical computer science, comics, history, and philosophy.
+          Would love to connect with like-minded people, so feel free to reach out!
         </p>
       </div>
 
-      <div className="about__card">
+      {/* <div className="about__card">
         <div className="about__card-name">Saksham Panghal</div>
         <div className="about__card-title">// CS &amp; Engineering Student</div>
         <div className="about__card-info">
@@ -44,8 +50,9 @@ function About() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </section>
+
   );
 }
 

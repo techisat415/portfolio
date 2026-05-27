@@ -92,7 +92,7 @@ const particlesConfig = {
   },
   retina_detect: true,
   background: {
-    color: "#080b10",
+    color: "transparent",
   },
 };
 

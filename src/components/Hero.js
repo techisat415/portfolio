@@ -30,7 +30,7 @@ function Hero() {
     <section id="hero" className="hero">
       <div className="hero__grid-bg" />
       <div className="hero__content">
-        <p className="hero__tag">Available for opportunities</p>
+        <p className="hero__tag">Hi, Nice to meet you! I am</p>
 
         <h1 className="hero__name">
           Saksham Panghal

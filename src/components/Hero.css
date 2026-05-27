@@ -13,10 +13,16 @@
 .hero__grid-bg {
   position: absolute;
   inset: 0;
-  background-image:
+   /* background-image:
     linear-gradient(rgba(217, 0, 255, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(230, 0, 255, 0.04) 1px, transparent 1px);
-  background-size: 60px 60px;
+    linear-gradient(90deg, rgba(230, 0, 255, 0.04) 1px, transparent 1px); */
+  
+  background-size: 60px 60px; 
+  background-image: url('./images/keyboard2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, black 30%, transparent 100%);
   pointer-events: none;
 }
@@ -43,14 +49,14 @@
   content: '';
   width: 32px;
   height: 1px;
-  background: var(--accent);
+  /* background: var(--accent); */
   flex-shrink: 0;
 }
 
 .hero__name {
-  /* font-family: 'JetBrains Mono', monospace; */
-  font-family: 'Press Start 2P', cursive;
-  font-size: clamp(30px, 6vw, 70px);
+  font-family: 'JetBrains Mono', monospace;
+  /* font-family: 'Press Start 2P', cursive; */
+  font-size: clamp(60px, 9vw, 90px);
   transform: scaleY(1.5);
   font-weight: 800;
   line-height: 1.1;
@@ -58,7 +64,7 @@
   margin-bottom: 20px;
   white-space: nowrap;
   /* background: linear-gradient(135deg, #0852da 0%, rgba(0, 255, 170, 0.9) 60%, #00ff1e 100%); */
-  background: linear-gradient(135deg, #da0808 0%, rgba(255, 149, 0, 0.9) 60%, #ffd900 100%);
+  background: linear-gradient(135deg,  rgb(180, 230, 250) 0%, rgba(167, 202, 230, 0.9) 60%, #708096 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -66,7 +72,7 @@
 }
 
 .hero__role {
-  font-family: var(--mono);
+  font-family: 'JetBrains Mono', monospace;
   font-size: 18px;
   color: var(--muted);
   margin-bottom: 40px;

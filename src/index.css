@@ -1,6 +1,14 @@
 /* ── Global Reset & Variables ── */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&family=Sora:wght@100..800&family=Syne:wght@400..800&display=swap');
+
+
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -14,9 +22,9 @@
   --bg2:     #0d1117;
   --bg3:     #111820;
   --border:  rgba(212, 0, 255, 0.12);
-  --accent:  #ff6600;
+  --accent:  #8178e6;
   --accent2: #00aaff;
-  --text:    #e8f0fe;
+  --text:    #e8fafe;
   --muted:   #6b7fa3;
   --card:    #0d1520;
   --mono:    'Space Mono', monospace;
@@ -29,10 +37,16 @@ html {
 
 body {
   font-family: var(--display);
-  background: var(--bg);
+  /* background: var(--bg); */
   color: var(--text);
   line-height: 1.6;
   overflow-x: hidden;
+  background-image: url('./components/images/keyboard2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
 }
 
 /* Scanline overlay */
@@ -40,13 +54,13 @@ body::before {
   content: '';
   position: fixed;
   inset: 0;
-  background: repeating-linear-gradient(
+  /* background: repeating-linear-gradient(
     0deg,
     transparent,
     transparent 2px,
     rgba(217, 0, 255, 0.015) 2px,
     rgba(230, 0, 255, 0.015) 4px
-  );
+  ); */
   pointer-events: none;
   z-index: 9999;
 }
