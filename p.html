@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saksham | Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;600;700&family=Courier+Prime&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-primary: #1a1a1a;
+            --color-text-primary: #1a1a1a;
+            --color-secondary: #2c2c2c;
+            --color-text-secondary: #4a4a4a;
+            --color-background: #f4f0e8; /* Aptifolio's signature off-white/cream retro background */
+            --color-background-sub: #e5e0d5;
+            --color-card-background: #ffffff;
+            --color-accent: #1a1a1a;
+            --color-border: #1a1a1a;
+            --color-hover-background: rgba(0, 0, 0, 0.05);
+            
+            --font-sans: "Work Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+            --font-heading: "Courier Prime", monospace, serif;
+        }
+
+        /* Applying the global color token styling */
+        body {
+            background-color: var(--color-background) !important;
+            color: var(--color-text-primary) !important;
+            font-family: var(--font-sans);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        h1, h2, h3, .terminal-text {
+            font-family: var(--font-heading);
+        }
+
+        /* Custom minimal scrollbar styling matching your configuration */
+        html {
+            scrollbar-width: thin;
+            scrollbar-color: var(--color-border) var(--color-background);
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--color-border);
+            border-radius: 10px;
+            border: 2px solid var(--color-background);
+            background-clip: padding-box;
+            transition: background-color .2s ease-in-out;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--color-background);
+            border-left: 1px solid rgba(0, 0, 0, .05);
+        }
+
+        /* Utility retro border box wrapper used in Aptifolio styles */
+        .apt-card {
+            background-color: var(--color-card-background);
+            border: 1px solid var(--color-border);
+            box-shadow: 4px 4px 0px 0px var(--color-border);
+            transition: all 0.2s ease;
+        }
+
+        .apt-card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px 0px var(--color-border);
+        }
+        
+        .badge {
+            border: 1px solid var(--color-border);
+            background-color: var(--color-background-sub);
+            font-size: 0.75rem;
+            padding: 0.125rem 0.5rem;
+            font-family: var(--font-heading);
+        }
+    </style>
+</head>
+<body class="min-h-screen selection:bg-neutral-800 selection:text-white">
+
+    <header class="border-b border-neutral-900 sticky top-0 bg-[#f4f0e8]/80 backdrop-blur-md z-50">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-tight text-neutral-900">
+                saksham<span class="text-neutral-500">.dev</span>
+            </a>
+            <nav class="flex space-x-6 text-sm font-medium text-[var(--color-text-secondary)]">
+                <a href="#about" class="hover:text-neutral-900 transition-colors">01. About</a>
+                <a href="#skills" class="hover:text-neutral-900 transition-colors">02. Skills</a>
+                <a href="#projects" class="hover:text-neutral-900 transition-colors">03. Projects</a>
+                <a href="#contact" class="hover:text-neutral-900 transition-colors">04. Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 space-y-24">
+
+        <section id="about" class="space-y-6 pt-6">
+            <div class="inline-block text-xs uppercase tracking-widest bg-neutral-900 text-white px-2 py-1 terminal-text">
+                Status: Available for opportunities
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-neutral-900 leading-none">
+                Hi, I am Saksham.
+            </h1>
+            <p class="text-lg md:text-xl text-[var(--color-text-secondary)] max-w-2xl leading-relaxed">
+                I am a passionate software engineer focused on building robust, modular web systems. Clean layouts, efficient algorithms, and zero fluff.
+            </p>
+            <div class="flex flex-wrap gap-4 pt-4">
+                <a href="#projects" class="apt-card px-4 py-2 font-medium text-sm flex items-center justify-center">
+                    Explore My Work &rarr;
+                </a>
+                <a href="#contact" class="px-4 py-2 border border-neutral-900 hover:bg-neutral-200 transition-all font-medium text-sm">
+                    Get in touch
+                </a>
+            </div>
+        </section>
+
+        <section id="skills" class="space-y-6">
+            <div class="flex items-center space-x-4">
+                <h2 class="text-xl font-bold uppercase tracking-wider text-neutral-900">02. Core Expertise</h2>
+                <div class="h-[1px] bg-neutral-900 flex-grow"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="border border-neutral-900 p-5 bg-white/50 space-y-3">
+                    <h3 class="font-bold border-b border-neutral-900 pb-1 text-sm uppercase tracking-wide">Languages</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge">TypeScript</span>
+                        <span class="badge">JavaScript</span>
+                        <span class="badge">Python</span>
+                        <span class="badge">Go</span>
+                    </div>
+                </div>
+                <div class="border border-neutral-900 p-5 bg-white/50 space-y-3">
+                    <h3 class="font-bold border-b border-neutral-900 pb-1 text-sm uppercase tracking-wide">Frameworks</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge">React / Next.js</span>
+                        <span class="badge">Node.js</span>
+                        <span class="badge">FastAPI</span>
+                        <span class="badge">TailwindCSS</span>
+                    </div>
+                </div>
+                <div class="border border-neutral-900 p-5 bg-white/50 space-y-3">
+                    <h3 class="font-bold border-b border-neutral-900 pb-1 text-sm uppercase tracking-wide">Backend & DevOps</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge">PostgreSQL</span>
+                        <span class="badge">Docker</span>
+                        <span class="badge">Redis</span>
+                        <span class="badge">AWS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="space-y-6">
+            <div class="flex items-center space-x-4">
+                <h2 class="text-xl font-bold uppercase tracking-wider text-neutral-900">03. Selected Projects</h2>
+                <div class="h-[1px] bg-neutral-900 flex-grow"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="apt-card p-6 flex flex-col justify-between space-y-4">
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center text-xs text-[var(--color-text-secondary)] font-mono">
+                            <span>FILE_01 // PUBLIC</span>
+                            <span>2026</span>
+                        </div>
+                        <h3 class="text-xl font-bold tracking-tight">Semantic Graph Library</h3>
+                        <p class="text-sm text-[var(--color-text-secondary)] leading-relaxed">
+                            An open-source general-purpose knowledge graph library designed to create, update, and manage semantic relationships over local database vectors.
+                        </p>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="text-[11px] bg-neutral-100 text-neutral-800 border border-neutral-300 px-2 py-0.5 font-mono">Python</span>
+                            <span class="text-[11px] bg-neutral-100 text-neutral-800 border border-neutral-300 px-2 py-0.5 font-mono">Ollama</span>
+                            <span class="text-[11px] bg-neutral-100 text-neutral-800 border border-neutral-300 px-2 py-0.5 font-mono">SQLite</span>
+                        </div>
+                        <div class="pt-2 border-t border-dashed border-neutral-300 flex justify-between text-xs">
+                            <a href="#" class="font-bold hover:underline">&gt;&gt; Source Code</a>
+                            <a href="#" class="font-bold hover:underline">Live Demo &nearr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="apt-card p-6 flex flex-col justify-between space-y-4">
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center text-xs text-[var(--color-text-secondary)] font-mono">
+                            <span>FILE_02 // SAAS</span>
+                            <span>2025</span>
+                        </div>
+                        <h3 class="text-xl font-bold tracking-tight">Distributed Task Runner</h3>
+                        <p class="text-sm text-[var(--color-text-secondary)] leading-relaxed">
+                            High-throughput asynchronous task orchestrator engineered with pub-sub mechanics to reduce heavy processing workloads across concurrent microservices.
+                        </p>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="text-[11px] bg-neutral-100 text-neutral-800 border border-neutral-300 px-2 py-0.5 font-mono">Go</span>
+                            <span class="text-[11px] bg-neutral-100 text-neutral-800 border border-neutral-300 px-2 py-0.5 font-mono">Redis</span>
+                            <span class="text-[11px] bg-neutral-100 text-neutral-800 border border-neutral-300 px-2 py-0.5 font-mono">Docker</span>
+                        </div>
+                        <div class="pt-2 border-t border-dashed border-neutral-300 flex justify-between text-xs">
+                            <a href="#" class="font-bold hover:underline">&gt;&gt; Source Code</a>
+                            <a href="#" class="font-bold hover:underline">Live Demo &nearr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="space-y-6">
+            <div class="flex items-center space-x-4">
+                <h2 class="text-xl font-bold uppercase tracking-wider text-neutral-900">04. Connection Terminal</h2>
+                <div class="h-[1px] bg-neutral-900 flex-grow"></div>
+            </div>
+            
+            <div class="border border-neutral-900 bg-white p-6 md:p-8 space-y-6">
+                <p class="text-[var(--color-text-secondary)] text-sm">
+                    Drop a message if you want to collaborate on open-source libraries, explore cloud infrastructure designs, or hire me for complex freelance features.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm font-mono pt-2">
+                    <a href="mailto:saksham@example.com" class="flex items-center p-3 border border-neutral-200 hover:border-neutral-900 hover:bg-neutral-50 transition-colors">
+                        📧 saksham@example.com
+                    </a>
+                    <a href="https://github.com" target="_blank" class="flex items-center p-3 border border-neutral-200 hover:border-neutral-900 hover:bg-neutral-50 transition-colors">
+                        💻 github.com/saksham
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="flex items-center p-3 border border-neutral-200 hover:border-neutral-900 hover:bg-neutral-50 transition-colors">
+                        🤝 linkedin/in/saksham
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-neutral-300 mt-24 text-xs font-mono text-center py-8 text-[var(--color-text-secondary)]">
+        <p>© 2026 Saksham. Built using Aptifolio Theme Engine styling specs.</p>
+    </footer>
+
+</body>
+</html>

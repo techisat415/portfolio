@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling for anchor links (e.g., #about, #projects) */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fallback color-scheme rendering */
+:root {
+  color-scheme: light;
+}
