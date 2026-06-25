@@ -1,3 +1,26 @@
+# dependencies
 node_modules/
-public/saksham_panghal_resume.pdf
-public/Saksham Panghal Resume.pdf
+.next/
+
+# environment variables
+.env
+.env.local
+
+# logs
+logs
+*.log
+
+# build files
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# editor settings
+.vscode/
+.idea/
+
+# coverage
+coverage/
