@@ -6,7 +6,6 @@ const workSans = Work_Sans({
   variable: "--font-work-sans",
   weight: ["100", "300", "400", "500", "600", "700"],
 });
-// hfuciewfn iuehfiucwed
 const courier = Courier_Prime({
   subsets: ["latin"],
   variable: "--font-courier",

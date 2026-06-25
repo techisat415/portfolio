@@ -3,20 +3,36 @@ import Link from 'next/link';
 export default function HomePage() {
   const projects = [
     {
-      id: "semantic-graph-library",
-      title: "Semantic Graph Library",
+      id: "collab-code-workspace",
+      title: "Collaborative Code Workspace",
       tag: "FILE_01 // PUBLIC",
       year: "2026",
-      description: "An open-source general-purpose knowledge graph library designed to create, update, and manage semantic relationships over local database vectors.",
-      tech: ["Python", "Ollama", "SQLite"]
+      description: "A real-time collaborative development platform featuring multi-user document synchronization, active user presence tracking, and a resilient in-memory session architecture.",
+      tech: ["Node.js", "Yjs", "WebSockets", "PostgreSQL", "React", "Docker"]
     },
     {
-      id: "distributed-task-runner",
-      title: "Distributed Task Runner",
+      id: "metro-route-planner",
+      title: "Metro Route Planner",
       tag: "FILE_02 // SAAS",
       year: "2025",
-      description: "High-throughput asynchronous task orchestrator engineered with pub-sub mechanics to reduce heavy processing workloads across concurrent microservices.",
-      tech: ["Go", "Redis", "Docker"]
+      description: "A full-stack metro navigation system for computing optimal routes, estimated travel time, geographical distance and fare between stations using graph based algorithms. ",
+      tech: ["Node.js", "React", "PostgreSQL", "Docker"]
+    },
+    {
+      id: "campus-utility-app",
+      title: "Campus Utility App",
+      tag: "FILE_02 // SAAS",
+      year: "2025",
+      description: "A multi platform mobile application using Flutter for campus utility services including lost & found and ride sharing with real-time updates for ride matching and item claim status ",
+      tech: ["Flutter", "Firebase", "Firestore"]
+    },
+    {
+      id: "polarization-simulator",
+      title: "Polarization Simulator",
+      tag: "FILE_02 // SAAS",
+      year: "2025",
+      description: "Dynamic simulation of communities in a graph based on idealogically polarized nodes to study how polarization evolves in networks and how communities of similar opinons form and evolve over time.",
+      tech: ["Python", "C++", "Data Structures", "Graph Theory"]
     }
   ];
 
