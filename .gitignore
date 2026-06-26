@@ -4,9 +4,6 @@ node_modules/
 # next.js build output
 .next/
 
-# resume pdf
-public/resume.pdf
-
 # environment variables
 .env
 .env.local
