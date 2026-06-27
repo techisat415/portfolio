@@ -1,4 +1,5 @@
 import { Work_Sans, Courier_Prime } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next"
 import "./globals.css";
 
 const workSans = Work_Sans({
