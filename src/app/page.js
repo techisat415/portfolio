@@ -263,8 +263,9 @@ export default function HomePage() {
 
                 <ContactLink index="01" label="GitHub" href="https://github.com/techisat415" action="VISIT" />
                 <ContactLink index="02" label="LinkedIn" href="https://linkedin.com/in/sakshampanghal" action="VISIT" />
-                <ContactLink index="03" label="Email" href="mailto:saksham.panghaal@gmail.com" action="SEND" />
-                <ContactLink index="04" label="Resume" href="/resume.pdf" action="OPEN" />
+                <ContactLink index="03" label="Leetcode" href="https://leetcode.com/saksham47" action="VISIT" />
+                <ContactLink index="04" label="Email" href="mailto:saksham.panghaal@gmail.com" action="SEND" />
+                <ContactLink index="05" label="Resume" href="/resume.pdf" action="OPEN" />
 
               </div>
             </div>
